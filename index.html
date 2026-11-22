@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bheemshetty Ankitha | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Bheemshetty Ankitha, a Computer Science graduate skilled in Java, Python, SQL, Web Development, Android, and Machine Learning."
+    />
+    <meta name="keywords" content="Bheemshetty Ankitha, Portfolio, CSE Graduate, B.Tech, Java, Python, SQL, Web Developer, Hyderabad" />
+    <meta name="author" content="Bheemshetty Ankitha" />
+
+    <!-- Browser Tab / Toolbar Icon: "BA" Badge -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2306b6d4'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='800' fill='white'>BA</text></svg>"
+    />
+
+    <!-- JavaScript (Top of head to initialize theme immediately before paint) -->
+    <script type="module" src="./script.js"></script>
+
+    <!-- Google Font: Plus Jakarta Sans for cohesive clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet (Separate CSS File) -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Sticky Navigation Header -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="logo">
+          <span class="logo-badge">BA</span>
+          <span class="logo-text">Bheemshetty Ankitha</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+          <a href="#home" class="nav-item active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#skills" class="nav-item">Skills</a>
+          <a href="#education" class="nav-item">Education</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#certificates" class="nav-item">Certificates</a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+
+        <!-- Right Controls: Theme Switcher & Mobile Toggle -->
+        <div class="nav-right">
+          <!-- White & Black Mode Toggle Button -->
+          <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle Black/White mode"
+            title="Toggle Black / White mode"
+          >
+            <!-- Sun icon (shown in Black mode) -->
+            <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon icon (shown in White mode) -->
+            <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Hamburger Button -->
+          <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer (Inside Sticky Header so it stays on screen) -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#certificates" class="mobile-link">Certificates</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content reveal-up">
+            <div class="badge-status">
+              <span class="status-circle"></span>
+              <span>Looking for Opportunities (2025 Grad)</span>
+            </div>
+
+            <h1 class="hero-heading">
+              Hi, I'm <span class="text-gradient">Bheemshetty Ankitha</span>
+            </h1>
+
+            <p class="hero-role">CSE Graduate (B.Tech)</p>
+
+            <p class="hero-bio">
+              I am a passionate graduate from Hyderabad with strong expertise in Java, Python, SQL, and Web Development. I enjoy building clean, functional applications, optimizing databases, and solving real-world challenges through technology.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="highlight-box">
+                <strong>2025</strong>
+                <span>B.Tech CSE</span>
+              </div>
+              <div class="highlight-box">
+                <strong>74%</strong>
+                <span>Aggregate Score</span>
+              </div>
+              <div class="highlight-box">
+                <strong>2</strong>
+                <span>Major Projects</span>
+              </div>
+              <div class="highlight-box">
+                <strong>Hyderabad</strong>
+                <span>Location</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-up delay-1">
+            <div class="profile-card">
+              <div class="avatar-circle">
+                <span>BA</span>
+              </div>
+              <h3 class="profile-name">Bheemshetty Ankitha</h3>
+              <p class="profile-sub">CSE Graduate (B.Tech)</p>
+              <div class="profile-location">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hyderabad / Mahabubnagar, India</span>
+              </div>
+
+              <a href="#contact" class="btn btn-sm btn-primary btn-block">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="section-title-wrap reveal-up">
+            <span class="sub-heading">About Me</span>
+            <h2 class="section-title">Driven Developer with a Practical Mindset</h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="about-container reveal-up">
+            <div class="about-text-card">
+              <p>
+                I am a motivated and detail-oriented Computer Science graduate with solid fundamentals in <strong>Java</strong>, <strong>Python</strong>, <strong>SQL</strong>, and modern <strong>Web Technologies</strong>.
+              </p>
+              <p>
+                During my studies at Jayaprakash Narayan College of Engineering, I focused on building practical applications that solve real-world problems — including an end-to-end restaurant table booking Android app with real-time Firebase sync, and a machine learning predictive system that evaluates stress levels from sleep metrics.
+              </p>
+              <p>
+                I am actively looking for an entry-level software engineering or web development role where I can apply my problem-solving abilities, learn rapidly, and deliver high-quality work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section (Categorized in Rectangular Boxes with Symbols) -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-title-wrap reveal-up">
+            <span class="sub-heading">My Skills</span>
+            <h2 class="section-title">Technologies & Tools</h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="skills-sections-grid">
+            <!-- Box 1: Programming Languages -->
+            <div class="skills-box reveal-up delay-1">
+              <div class="box-header">
+                <span class="box-icon">⚡</span>
+                <h3 class="box-title">Programming Languages</h3>
+              </div>
+              <div class="box-skills">
+                <div class="skill-rect">
+                  <div class="skill-icon java-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                      <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                      <line x1="6" y1="1" x2="6" y2="4"></line>
+                      <line x1="10" y1="1" x2="10" y2="4"></line>
+                      <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Java</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon python-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2a5 5 0 0 0-5 5v3h5v2H5a5 5 0 0 0-5 5 5 5 0 0 0 5 5h2v-3a5 5 0 0 1 5-5h2V7a5 5 0 0 0-5-5z"></path>
+                      <path d="M12 22a5 5 0 0 0 5-5v-3h-5v-2h7a5 5 0 0 0 5-5 5 5 0 0 0-5-5h-2v3a5 5 0 0 1-5 5h-2v2a5 5 0 0 0 5 5z"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Python</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon js-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <path d="M9 16v-4"></path>
+                      <path d="M15 16v-6a2 2 0 0 0-2-2"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Box 2: Web Development -->
+            <div class="skills-box reveal-up delay-2">
+              <div class="box-header">
+                <span class="box-icon">🌐</span>
+                <h3 class="box-title">Web Development</h3>
+              </div>
+              <div class="box-skills">
+                <div class="skill-rect">
+                  <div class="skill-icon html-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 3h16l-2 15-6 3-6-3L4 3z"></path>
+                      <path d="M8 8h8l-.5 4H8.5l.3 3 3.2.9 3.2-.9.2-2"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">HTML5</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon css-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 5 4 19 12 22 20 19 22 5 12 2"></polygon>
+                      <polyline points="7 10 12 10 16 10 15 14 12 15 9 14"></polyline>
+                    </svg>
+                  </div>
+                  <span class="skill-name">CSS3</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon flask-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M10 2v7.31L4.35 19.4A2 2 0 0 0 6 22h12a2 2 0 0 0 1.65-2.6L14 9.31V2"></path>
+                      <line x1="8.5" y1="2" x2="15.5" y2="2"></line>
+                      <line x1="14" y1="9.31" x2="10" y2="9.31"></line>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Flask</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Box 3: Databases & Cloud -->
+            <div class="skills-box reveal-up delay-3">
+              <div class="box-header">
+                <span class="box-icon">🗄️</span>
+                <h3 class="box-title">Databases & Cloud</h3>
+              </div>
+              <div class="box-skills">
+                <div class="skill-rect">
+                  <div class="skill-icon sql-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">SQL</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon firebase-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15 8 22 9 17 14 18 21 12 17 6 21 7 14 2 9 9 8 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Firebase Realtime DB</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Box 4: Mobile, AI & Tools -->
+            <div class="skills-box reveal-up delay-4">
+              <div class="box-header">
+                <span class="box-icon">🛠️</span>
+                <h3 class="box-title">Mobile, AI & Tools</h3>
+              </div>
+              <div class="box-skills">
+                <div class="skill-rect">
+                  <div class="skill-icon android-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Android Studio</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon ml-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Machine Learning</span>
+                </div>
+
+                <div class="skill-rect">
+                  <div class="skill-icon git-color">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="18" cy="18" r="3"></circle>
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                      <line x1="6" y1="9" x2="6" y2="21"></line>
+                    </svg>
+                  </div>
+                  <span class="skill-name">Git & GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <div class="section-title-wrap reveal-up">
+            <span class="sub-heading">Academic Journey</span>
+            <h2 class="section-title">Education & Qualifications</h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="education-timeline">
+            <!-- 1. B.Tech -->
+            <div class="edu-card reveal-up delay-1">
+              <div class="edu-header">
+                <span class="edu-badge">2021 – 2025</span>
+                <span class="edu-score">74% Aggregate</span>
+              </div>
+              <h3 class="edu-degree">Bachelor of Technology in Computer Science (B.Tech CSE)</h3>
+              <p class="edu-school">Jayaprakash Narayan College of Engineering (JPNCE)</p>
+            </div>
+
+            <!-- 2. Intermediate -->
+            <div class="edu-card reveal-up delay-2">
+              <div class="edu-header">
+                <span class="edu-badge">2019 – 2021</span>
+                <span class="edu-score">762 Marks</span>
+              </div>
+              <h3 class="edu-degree">Intermediate (MPC)</h3>
+              <p class="edu-school">Shraddha Junior College</p>
+            </div>
+
+            <!-- 3. SSC -->
+            <div class="edu-card reveal-up delay-3">
+              <div class="edu-header">
+                <span class="edu-badge">2018 – 2019</span>
+                <span class="edu-score">CGPA: 8.2</span>
+              </div>
+              <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+              <p class="edu-school">New Rishi High School</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-title-wrap reveal-up">
+            <span class="sub-heading">Projects</span>
+            <h2 class="section-title">Selected Work</h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: DineSpot -->
+            <div class="project-card reveal-up delay-1">
+              <div class="project-header">
+                <span class="project-number">01</span>
+                <span class="project-type">Android Application</span>
+              </div>
+
+              <h3 class="project-title">DineSpot — Restaurant Booking App</h3>
+              <p class="project-description">
+                A full-featured native Android application built with Java, XML, and Android Studio. The app streamlines restaurant discovery, eliminates waiting times by offering real-time table availability tracking, and allows users to pre-order food and make secure payments.
+              </p>
+
+              <div class="project-features">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Real-time table tracking using Firebase Realtime Database</li>
+                  <li>Location-based restaurant discovery via Google Maps API</li>
+                  <li>User authentication, booking history, and order management with Firebase</li>
+                  <li>Food pre-ordering catalog and push notifications for status updates</li>
+                  <li>Responsive XML layouts built according to Android design standards</li>
+                </ul>
+              </div>
+
+              <div class="project-tags">
+                <span>Android Studio</span>
+                <span>Java</span>
+                <span>Firebase DB</span>
+                <span>Google Maps API</span>
+                <span>XML</span>
+              </div>
+            </div>
+
+            <!-- Project 2: Human Stress Detection -->
+            <div class="project-card reveal-up delay-2">
+              <div class="project-header">
+                <span class="project-number">02</span>
+                <span class="project-type">Machine Learning & Web</span>
+              </div>
+
+              <h3 class="project-title">Human Stress Detection System</h3>
+              <p class="project-description">
+                A machine learning system engineered to assess and predict human stress levels based on sleep duration and sleep quality metrics. Utilized Python and WEKA for data modeling and developed an interactive Flask web interface for real-time predictions.
+              </p>
+
+              <div class="project-features">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Machine learning models developed in Python and WEKA to classify stress levels</li>
+                  <li>Preprocessed sleep duration and quality metrics for feature extraction</li>
+                  <li>Flask-based web dashboard allowing users to input sleep details</li>
+                  <li>Instant, real-time stress level predictions and actionable advice</li>
+                </ul>
+              </div>
+
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>WEKA</span>
+                <span>Flask</span>
+                <span>HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="section section-alt">
+        <div class="container">
+          <div class="section-title-wrap reveal-up">
+            <span class="sub-heading">Certifications</span>
+            <h2 class="section-title">Certificates & Achievements</h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="cert-grid">
+            <div class="cert-card reveal-up">
+              <div class="cert-meta">
+                <span class="cert-badge">Remote Internship</span>
+                <span class="cert-date">August 2024</span>
+              </div>
+
+              <h3 class="cert-title">Prompt Engineering Research & Integration</h3>
+              <p class="cert-org">
+                <strong>Rochester Institute of Technology (RIT) & Excelerate</strong>
+                <span>• Tiger STRIPES Program</span>
+              </p>
+
+              <p class="cert-desc">
+                Successfully completed a one-month Prompt Engineering Research and Integration Remote Internship with Excelerate, supported by RIT's Tiger STRIPES Program. Gained hands-on experience in prompt engineering, RCTFC framework, AI output evaluation, research validation, hallucination and bias identification, AI-assisted research, documentation, and responsible AI.
+              </p>
+
+              <div class="cert-skills">
+                <span>Prompt Engineering</span>
+                <span>RCTFC Framework</span>
+                <span>AI Output Evaluation</span>
+                <span>Responsible AI</span>
+                <span>Research & Bias Detection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-title-wrap reveal-up">
+            <span class="sub-heading">Contact</span>
+            <h2 class="section-title">Let’s Work Together</h2>
+            <div class="title-underline"></div>
+          </div>
+
+          <div class="contact-wrapper">
+            <!-- Contact Details Left (Email, LinkedIn, GitHub in strict order) -->
+            <div class="contact-info reveal-up delay-1">
+              <h3>Connect With Me</h3>
+              <p>
+                I am actively seeking software engineering, web development, and backend developer opportunities. Feel free to explore my code, connect on professional networks, or send a direct message!
+              </p>
+
+              <div class="info-items">
+                <!-- 1. Email Card -->
+                <a href="mailto:bheemshettyankitha@gmail.com" class="info-item info-link-card">
+                  <div class="info-icon email-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>Email</strong>
+                    <span>bheemshettyankitha@gmail.com</span>
+                  </div>
+                  <span class="external-arrow">↗</span>
+                </a>
+
+                <!-- 2. LinkedIn Card -->
+                <a href="https://www.linkedin.com/in/b-ankitha-918567351/" target="_blank" rel="noopener noreferrer" class="info-item info-link-card">
+                  <div class="info-icon linkedin-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>LinkedIn</strong>
+                    <span>linkedin.com/in/b-ankitha-918567351</span>
+                  </div>
+                  <span class="external-arrow">↗</span>
+                </a>
+
+                <!-- 3. GitHub Card -->
+                <a href="https://github.com/bheemshettyankitha" target="_blank" rel="noopener noreferrer" class="info-item info-link-card">
+                  <div class="info-icon github-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong>GitHub</strong>
+                    <span>github.com/bheemshettyankitha</span>
+                  </div>
+                  <span class="external-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Contact Form Right -->
+            <div class="contact-form-card reveal-up delay-2">
+              <h3>Send a Message</h3>
+              <form class="contact-form" action="https://formspree.io/f/xykrqkzp" method="POST" id="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Your Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Your Subject" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <span>Send Message</span>
+                </button>
+                <div class="form-response" id="form-response" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>© <span id="year"></span> Bheemshetty Ankitha. All rights reserved.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top ↑</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
